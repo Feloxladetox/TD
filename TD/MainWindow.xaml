@@ -1,0 +1,36 @@
+﻿<Window x:Class="TD.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TD"
+        mc:Ignorable="d"
+        Title="{Binding Titre}" Height="450" Width="600
+        ">
+    <Grid>
+        <ListBox x:Name="List" ItemsSource="{Binding Result_liste}" Margin="20,20,380,60" RenderTransformOrigin="0.526,0.52"/>
+        <Button Content="Ajouter" Margin="20,384,485,10" Click="button_Click"/>
+        <Button Content="Supprimer" Margin="120,384,380,10" Click="button_Click1"/>
+        
+        <TextBox TextWrapping="Wrap" Text="TextBox" Margin="352,20,20,371"/>
+        <TextBox TextWrapping="Wrap" Text="TextBox" Margin="352,75,20,317"/>
+        <ListBox x:Name="List2" ItemsSource="{Binding Result_liste2}" Margin="254,140,20,150"/>
+        <TextBox x:Name="Pist"  TextWrapping="Wrap" Text="Ajouter une piste" Margin="254,307,242,86" />
+
+        <Button Content="Ajouter" Margin="375,307,120,87" Click="button_Click2"/>
+        <Button Content="Supprimer" Margin="490,308,10,86" Click="button_Click3"/>
+        <Button Content="Ouvrir dans une nouvelle fenetre" Margin="254,384,10,10"/>
+        
+        <TextBlock TextWrapping="Wrap" Text="Compositeur" Margin="260,20,260,383"/>
+        <TextBlock TextWrapping="Wrap" Text="Album" Margin="260,75,260,328"/>
+
+
+
+
+        <!-- <Button Content="Heure" Padding="8" HorizontalAlignment="Center" VerticalAlignment="Center"
+                Command="{Binding HeureCommand}"/> -->
+        
+        
+    </Grid>
+
+</Window>
