@@ -5,8 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TD"
         mc:Ignorable="d"
-        Title="{Binding Titre}" Height="450" Width="600
-        ">
+        Title="{Binding Titre}" Height="450" Width="601">
     <Grid>
         <ListBox x:Name="List" ItemsSource="{Binding Result_liste}" Margin="20,20,380,60" RenderTransformOrigin="0.526,0.52"/>
         <Button Content="Ajouter" Margin="20,384,485,10" Click="button_Click"/>
@@ -24,13 +23,6 @@
         <TextBlock TextWrapping="Wrap" Text="Compositeur" Margin="260,20,260,383"/>
         <TextBlock TextWrapping="Wrap" Text="Album" Margin="260,75,260,328"/>
 
-
-
-
-        <!-- <Button Content="Heure" Padding="8" HorizontalAlignment="Center" VerticalAlignment="Center"
-                Command="{Binding HeureCommand}"/> -->
-        
-        
     </Grid>
 
 </Window>
